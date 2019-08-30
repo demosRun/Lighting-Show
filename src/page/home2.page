@@ -1,0 +1,88 @@
+<template>
+  <div class="home">
+    <p class="main-title">&nbsp;&nbsp;在新中国成立70周年之际，人民网特别策划“中华人民共和国70华诞世界地标联动融媒体灯光秀”，为祖国70华诞献上瑰丽华章。这是世界首次依托人工智能灯光融媒体平台和5G通讯网络技术，呈现如梦如幻、丰富感人的内容，实现多地人民群众互动参与的灯光秀。</p>
+    <div class="bar">
+      <p>
+        <a href="#">人民网美国频道</a>
+        <span>></span>
+        <a href="#">70华诞灯光秀专题</a>
+        <span>></span>
+        <a href="#">国际主题</a>
+        <span>></span>
+      </p>
+    </div>
+    <div class="box">
+      <temple name="3dflow"  src="https://owo.ink/public/194bbcdc77319a26e049d109e600d6ef.page"></temple>
+      <h1>国际城市</h1>
+      <!-- 内容列表 -->
+      <ul class="content-box">
+        <li>标题列表标题列表标题列表标题列表标题列表标题列表标表标题列表题列表</li>
+        <li>标题列表标题列表标题列表标题列表标题列表标题列表标表标题列表题列表</li>
+        <li>标题列表标题列表标题列表标题列表标题列表标题列表标表标题列表题列表</li>
+      </ul>
+      <!-- 底部版权信息 -->
+      <temple name="copyright" src="./src/module/copyright.owo"></temple>
+    </div>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    },
+    starsClick: function () {
+      console.log(this)
+    }
+  }
+</script>
+
+
+<style lang="less">
+h1 {
+  font-size: 77px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+.bar {
+  height: 60px;
+  background-color: black;
+  line-height: 60px;
+  color: #9095b4;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 150px;
+  p {
+    display: block;
+    width: 1100px;
+    margin: 0 auto;
+  }
+  a {
+    color: #9095b4;
+  }
+}
+.content-box {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}
+.content-box {
+  padding: 20px 40px;
+  li {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 50px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-position: center left;
+    background-image: url('@|spot.png|');
+  }
+}
+.box {
+  padding-top: 90px;
+  background-color: #596186;
+  background-image: url('@|two-bg.png|');
+}
+</style>

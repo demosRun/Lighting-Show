@@ -1,6 +1,56 @@
 <template>
   <div class="home">
-    内容
+    <p class="main-title">&nbsp;&nbsp;在新中国成立70周年之际，人民网特别策划“中华人民共和国70华诞世界地标联动融媒体灯光秀”，为祖国70华诞献上瑰丽华章。这是世界首次依托人工智能灯光融媒体平台和5G通讯网络技术，呈现如梦如幻、丰富感人的内容，实现多地人民群众互动参与的灯光秀。</p>
+    <!-- 地图 -->
+    <div class="map-box">
+      <!-- 星星 -->
+      <a href="#" class="stars stars1" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars2" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars3" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars4" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars5" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars6" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars7" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars8" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars9" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars10" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars11" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars12" :click="starsClick"><div class="info">北京</div></a>
+    </div>
+    <!-- 二级页链接 -->
+    <a href="#" class="link abroad-link"></a>
+    <a href="#" class="link domestic-link"></a>
+    <!-- 内容列表 -->
+    <div class="content-box">
+      <ul>
+        <li>
+          <img src="@|show.jpg|"/>
+          <h2>shanghai</h2>
+          <h1>上海市</h1>
+          <p>来点文字来点文字来点文字，来点文字来点文字字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来字来点文字</p>
+        </li>
+        <li>
+          <img src="@|show.jpg|"/>
+          <h2>shanghai</h2>
+          <h1>上海市</h1>
+          <p>来点文字来点文字来点文字，来点文字来点文字字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来字来点文字</p>
+        </li>
+        <li>
+          <img src="@|show.jpg|"/>
+          <h2>shanghai</h2>
+          <h1>上海市</h1>
+          <p>来点文字来点文字来点文字，来点文字来点文字字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来字来点文字</p>
+        </li>
+        <li>
+          <img src="@|show.jpg|"/>
+          <h2>shanghai</h2>
+          <h1>上海市</h1>
+          <p>来点文字来点文字来点文字，来点文字来点文字字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来点文字来字来点文字</p>
+        </li>
+      </ul>
+    </div>
+    <!-- 底部版权信息 -->
+    <temple name="copyright" src="./src/module/copyright.owo"></temple>
   </div>
 </template>
 
@@ -8,11 +58,192 @@
   module.exports = {
     created: function () {
 
+    },
+    starsClick: function () {
+      console.log(this)
     }
   }
 </script>
 
 
 <style lang="less">
-
+.map-box {
+  width: 1167px;
+  height: 698px;
+  margin: auto;
+  position: relative;
+  margin-top: 153px;
+  background-image: url('@|map.png|');
+}
+.stars {
+  width: 36px;
+  height: 35px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  background-image: url('@|stars.png|');
+  .info {
+    width: 107px;
+    height: 121px;
+    position: absolute;
+    left: -36px;
+    margin: auto;
+    top: -125px;
+    opacity: 0;
+    color: white;
+    line-height: 110px;
+    text-align: center;
+    font-size: 26px;
+    transition: opacity 0.5s;
+    pointer-events: none;
+    background-image: url('@|info.png|');
+  }
+}
+.stars:hover {
+  .info {
+    opacity: 1;
+  }
+}
+.stars1 {
+  left: 234px;
+  top: 293px;
+}
+.stars2 {
+  left: 538px;
+  top: 256px;
+}
+.stars3 {
+  left: 561px;
+  top: 243px;
+}
+.stars4 {
+  left: 567px;
+  top: 284px;
+}
+.stars5 {
+  left: 562px;
+  top: 172px;
+}
+.stars6 {
+  right: 187px;
+  top: 272px;
+}
+.stars7 {
+  right: 191px;
+  top: 305px;
+}
+.stars8 {
+  right: 235px;
+  top: 303px;
+}
+.stars9 {
+  right: 208px;
+  top: 324px;
+}
+.stars10 {
+  right: 166px;
+  top: 324px;
+}
+.stars11 {
+  right: 219px;
+  top: 366px;
+}
+.stars12 {
+  right: 195px;
+  top: 360px;
+}
+.domestic-link {
+  width: 991px;
+  height: 232px;
+  position: absolute;
+  top: 1509px;
+  left: -6px;
+  background-image: url('@|domestic-link.png|');
+}
+.abroad-link {
+  width: 1030px;
+  height: 232px;
+  right: -6px;
+  top: 1467px;
+  position: absolute;
+  background-image: url('@|abroad-link.png|');
+}
+.content-box {
+  padding-bottom: 40px;
+  background-color: #596186;
+  background-image: url(@|decorate.png|);
+  ul {
+    display: block;
+    width: 1136px;
+    margin: 0 auto;
+    padding-top: 409px;
+    background-color: #212540;
+    width: 990px;
+  }
+  li {
+    display: block;
+    width: 1136px;
+    height: 441px;
+    position: relative;
+    margin-left: -54px;
+    margin-bottom: 160px;
+    background-image: url('@|content1.png|');
+  }
+  img {
+    position: absolute;
+    width: 740px;
+    height: 430px;
+    left: 1px;
+    top: -50px;
+  }
+  h2 {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    left: 770px;
+    top: -35px;
+  }
+  h1 {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    left: 770px;
+    top: 14px;
+    line-height: 80px;
+  }
+  p {
+    position: absolute;
+    font-size: 20px;
+    line-height: 38px;
+    width: 300px;
+    color: white;
+    left: 770px;
+    top: 120px;
+  }
+  li:nth-child(even) {
+    margin-left: -104px;
+    background-image: url('@|content2.png|');
+    img {
+      left: unset;
+      right: 1px;
+      top: -17px;
+    }
+    h2 {
+      left: unset;
+      right: 770px;
+      top: -2px;
+    }
+    h1 {
+      left: unset;
+      right: 770px;
+      top: 62px;
+    }
+    p {
+      left: unset;
+      right: 770px;
+      top: 150px;
+    }
+  }
+}
 </style>

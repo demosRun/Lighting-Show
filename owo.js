@@ -2,7 +2,7 @@ module.exports = {
   // 项目根目录
   root: "/src",
   // 项目入口文件
-  entry: "home",
+  entry: "home2",
   // 页面标题
   title: '页面',
   // 解决方案
@@ -19,7 +19,7 @@ module.exports = {
     },
     {
       name: 'viewport',
-      content: 'width=1200, user-scalable=yes, shrink-to-fit=no',
+      content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no',
     },
     {
       name: 'format-detection',
@@ -83,6 +83,19 @@ module.exports = {
     {
       name: "jquery1.11.0",
       src: "http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"
+    },
+    {
+      name: "idangerous.swiper2.7.0.min",
+      src: "./src/resource/idangerous.swiper2.7.0.min.js"
+    },
+    {
+      name: "idangerous.swiper.3dflow",
+      src: "./src/resource/idangerous.swiper.3dflow.js"
+    },
+    {
+      name: "main",
+      src: "./src/main.js",
+      resource: true
     }
   ],
   // 使用到的样式列表
@@ -91,13 +104,21 @@ module.exports = {
       name: "main",
       src: "./src/main.css",
       resource: true
-    }
+    },
+    {
+      name: "idangerous.swiper2.7.0",
+      src: "./src/resource/idangerous.swiper2.7.0.css",
+    },
+    {
+      name: "idangerous.swiper.3dflow",
+      src: "./src/resource/idangerous.swiper.3dflow.css",
+    },
   ],
   // 页面清单
   pageList: [
     {
-      name: 'home',
-      src: './src/page/home.page'
+      name: 'home2',
+      src: './src/page/home2.page'
     }
   ],
   // 调试模式配置
