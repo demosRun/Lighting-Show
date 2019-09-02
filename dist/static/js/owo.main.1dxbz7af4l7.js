@@ -1,4 +1,4 @@
-// Mon Sep 02 2019 09:05:46 GMT+0800 (GMT+08:00)
+// Mon Sep 02 2019 10:56:30 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -24,6 +24,42 @@ owo.script = {
       console.log(this);
     },
     "template": {
+      "3dflow": {
+        "data": {
+          "mySwiper": null
+        },
+        "created": function created() {
+          this.data.mySwiper = new Swiper('.swiper-container', {
+            autoplay: 3000,
+            loop: true,
+            // 禁用鼠标点击
+            simulateTouch: false,
+            slidesPerView: 3,
+            //其他设置
+            tdFlow: {
+              rotate: 0,
+              stretch: -50,
+              depth: 80,
+              modifier: 1,
+              roundLengths: true
+            },
+            onSlideClick: function onSlideClick(swiper, e) {
+              var url = swiper.clickedSlide.getAttribute("src");
+
+              if (url) {
+                window.open(url);
+              }
+            }
+          });
+        },
+        "last": function last() {
+          this.data.mySwiper.swipePrev();
+        },
+        "next": function next() {
+          this.data.mySwiper.swipeNext();
+        },
+        "prop": {}
+      },
       "copyright": {
         "prop": {}
       }
@@ -119,9 +155,9 @@ _owo._run = function (eventFor, templateName, event) {
 
 _owo.bindEvent = function (eventName, eventFor, tempDom, templateName) {
   // 处理事件 使用bind防止闭包
-  tempDom.addEventListener(eventName, function(event) {
+  tempDom['on' + eventName] = function(event) {
     _owo._run(eventFor, templateName, event)
-  }.bind({eventFor}), false)
+  }.bind({eventFor: eventFor})
 }
 
 /* owo事件处理 */
@@ -275,4 +311,23 @@ _owo.handlePage = function (newPageFunction, entryDom) {
     // 递归处理
     _owo.handlePage(templateScript, childDom)
   }
+}
+_owo._event_tap = function (tempDom, callBack) {
+  // 变量
+  var startTime = 0
+  var isMove = false
+  tempDom.addEventListener('touchstart', function() {
+    startTime = Date.now();
+  })
+  tempDom.addEventListener('touchmove', function() {
+    isMove = true
+  })
+  tempDom.addEventListener('touchend', function(e) {
+    if (Date.now() - startTime < 300 && !isMove) {
+      callBack(e)
+    }
+    // 清零
+    startTime = 0;
+    isMove = false
+  })
 }

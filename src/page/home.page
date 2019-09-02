@@ -93,7 +93,7 @@
     color: white;
     line-height: 110px;
     text-align: center;
-    font-size: 26px;
+    font-size: 21px;
     transition: opacity 0.5s;
     pointer-events: none;
     background-image: url('@|info.png|');

@@ -16,9 +16,11 @@
       <h1>国际城市</h1>
       <!-- 内容列表 -->
       <ul class="content-box">
+        <h2>北京市</h2>
         <li>标题列表标题列表标题列表标题列表标题列表标题列表标表标题列表题列表</li>
         <li>标题列表标题列表标题列表标题列表标题列表标题列表标表标题列表题列表</li>
         <li>标题列表标题列表标题列表标题列表标题列表标题列表标表标题列表题列表</li>
+        <div class="line"></div>
       </ul>
       <!-- 底部版权信息 -->
       <temple name="copyright" src="./src/module/copyright.owo"></temple>
@@ -39,6 +41,13 @@
 
 
 <style lang="less">
+
+.mt30 {
+  position: relative;
+  padding-bottom: 40px;
+  padding-top: 180px;
+  margin: 0;
+}
 h1 {
   font-size: 77px;
   line-height: 100px;
@@ -79,10 +88,18 @@ h1 {
     background-position: center left;
     background-image: url('@|spot.png|');
   }
+  h2 {
+    font-size: 44px;
+    line-height: 80px;
+  }
 }
 .box {
   padding-top: 90px;
   background-color: #596186;
   background-image: url('@|two-bg.png|');
+}
+.line {
+  border-bottom: 2px solid #ccc;
+  margin: 15px 0;
 }
 </style>
