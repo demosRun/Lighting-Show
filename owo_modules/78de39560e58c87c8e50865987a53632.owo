@@ -36,9 +36,11 @@
           roundLengths : true
         },
         onSlideClick: function(swiper, e) {
-          const url = swiper.clickedSlide.getAttribute("src")
-          if (url) {
-            window.open(url)
+          if (swiper.activeIndex == swiper.clickedSlideIndex - 1) {
+            const url = swiper.clickedSlide.getAttribute("src")
+            if (url) {
+              window.open(url)
+            }
           }
         }
       })
@@ -63,9 +65,9 @@ li {
   transform-style: preserve-3d;
   box-sizing: content-box;
   img {
-    width: 1000px;
+    width: 740px;
     height: 100%;
-    margin-left: -50%;
+    margin-left: -60%;
   }
   a {
     display: block;
@@ -75,7 +77,7 @@ li {
 }
 .swiper-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1000px;
   height: 500px;
   margin: 0 auto;
   position: relative;

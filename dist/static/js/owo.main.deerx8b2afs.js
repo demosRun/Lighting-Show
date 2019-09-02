@@ -1,4 +1,4 @@
-// Mon Sep 02 2019 10:56:30 GMT+0800 (GMT+08:00)
+// Mon Sep 02 2019 16:27:24 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -24,39 +24,107 @@ owo.script = {
       console.log(this);
     },
     "template": {
-      "3dflow": {
+      "swiperBox": {
         "data": {
-          "mySwiper": null
+          "swiperBoxList": [{
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181255181321992447490.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }, {
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181011409383792014803.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }, {
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181011411060153107563.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }]
         },
         "created": function created() {
-          this.data.mySwiper = new Swiper('.swiper-container', {
-            autoplay: 3000,
-            loop: true,
-            // 禁用鼠标点击
-            simulateTouch: false,
-            slidesPerView: 3,
-            //其他设置
-            tdFlow: {
-              rotate: 0,
-              stretch: -50,
-              depth: 80,
-              modifier: 1,
-              roundLengths: true
-            },
-            onSlideClick: function onSlideClick(swiper, e) {
-              var url = swiper.clickedSlide.getAttribute("src");
+          var _this = this;
 
-              if (url) {
-                window.open(url);
-              }
-            }
-          });
+          // 轮播图展示区域swiper
+          setTimeout(function () {
+            new Swiper(_this.query('.swiper-container-pPX8XxuUyIehAAEu')[0], {
+              pagination: _this.query('.pagination-pPX8XxuUyIehAAEu')[0],
+              paginationClickable: true
+            });
+          }, 0);
         },
-        "last": function last() {
-          this.data.mySwiper.swipePrev();
+        "prop": {}
+      },
+      "swiperBox2": {
+        "data": {
+          "swiperBoxList": [{
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181255181321992447490.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }, {
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181011409383792014803.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }, {
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181011411060153107563.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }]
         },
-        "next": function next() {
-          this.data.mySwiper.swipeNext();
+        "created": function created() {
+          var _this2 = this;
+
+          // 轮播图展示区域swiper
+          setTimeout(function () {
+            new Swiper(_this2.query('.swiper-container-pPX8XxuUyIehAAEu')[0], {
+              pagination: _this2.query('.pagination-pPX8XxuUyIehAAEu')[0],
+              paginationClickable: true
+            });
+          }, 0);
+        },
+        "prop": {}
+      },
+      "swiperBox3": {
+        "data": {
+          "swiperBoxList": [{
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181255181321992447490.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }, {
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181011409383792014803.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }, {
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181011411060153107563.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }]
+        },
+        "created": function created() {
+          var _this3 = this;
+
+          // 轮播图展示区域swiper
+          setTimeout(function () {
+            new Swiper(_this3.query('.swiper-container-pPX8XxuUyIehAAEu')[0], {
+              pagination: _this3.query('.pagination-pPX8XxuUyIehAAEu')[0],
+              paginationClickable: true
+            });
+          }, 0);
+        },
+        "prop": {}
+      },
+      "swiperBox4": {
+        "data": {
+          "swiperBoxList": [{
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181255181321992447490.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }, {
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181011409383792014803.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }, {
+            "src": "http://www.people.com.cn/NMediaFile/2019/0618/MAIN201906181011411060153107563.jpg",
+            "text": "全省“法治进校园”巡讲团首站——晋中"
+          }]
+        },
+        "created": function created() {
+          var _this4 = this;
+
+          // 轮播图展示区域swiper
+          setTimeout(function () {
+            new Swiper(_this4.query('.swiper-container-pPX8XxuUyIehAAEu')[0], {
+              pagination: _this4.query('.pagination-pPX8XxuUyIehAAEu')[0],
+              paginationClickable: true
+            });
+          }, 0);
         },
         "prop": {}
       },
@@ -311,23 +379,4 @@ _owo.handlePage = function (newPageFunction, entryDom) {
     // 递归处理
     _owo.handlePage(templateScript, childDom)
   }
-}
-_owo._event_tap = function (tempDom, callBack) {
-  // 变量
-  var startTime = 0
-  var isMove = false
-  tempDom.addEventListener('touchstart', function() {
-    startTime = Date.now();
-  })
-  tempDom.addEventListener('touchmove', function() {
-    isMove = true
-  })
-  tempDom.addEventListener('touchend', function(e) {
-    if (Date.now() - startTime < 300 && !isMove) {
-      callBack(e)
-    }
-    // 清零
-    startTime = 0;
-    isMove = false
-  })
 }

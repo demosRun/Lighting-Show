@@ -1,77 +1,92 @@
-10:56:30.076 INFO  --------------------------- 开始编译 --------------------------- 
-10:56:30.076 INFO  程序运行目录: D:\work\Lighting Show 
-10:56:30.076 INFO  首次启动! 
-10:56:30.076 INFO  生成版本号: 1dxbz7af4l7 
-10:56:30.088 INFO  清理资源文件夹: D:\work\Lighting Show\dist\static 
-10:56:30.089 INFO  文件夹不存在: D:\work\Lighting Show\dist\static 
-10:56:30.089 INFO  创建文件夹: D:\work\Lighting Show\dist\static 
-10:56:30.089 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-10:56:30.089 DEBUG 读取网页标题: 页面 
-10:56:30.089 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
-10:56:30.090 DEBUG 模块 home 因名称重复被重命名为 home0 
-10:56:30.090 INFO  开始处理模块: home 
-10:56:30.132 INFO  开始处理模块: 3dflow 
-10:56:30.132 DEBUG 使用文件缓存:D:\work\Lighting Show\owo_modules\78de39560e58c87c8e50865987a53632.owo 
-10:56:30.187 DEBUG 缓存模板: 3dflowundefined 
-10:56:30.193 DEBUG 模板home处理用时: 62 毫秒! 
-10:56:30.193 DEBUG 模块 copyright 因名称重复被重命名为 copyright0 
-10:56:30.193 INFO  开始处理模块: copyright 
-10:56:30.200 DEBUG 缓存模板: copyrightundefined 
-10:56:30.201 DEBUG 模板home处理用时: 8 毫秒! 
-10:56:30.207 DEBUG 缓存模板: home./src/page/home2.page 
-10:56:30.207 DEBUG 模板home处理用时: 117 毫秒! 
-10:56:30.209 INFO  文件夹不存在: D:/work/Lighting Show/dist/static/resource 
-10:56:30.209 INFO  创建文件夹: D:/work/Lighting Show/dist/static/resource 
-10:56:30.210 DEBUG 处理资源: ["D:/work/Lighting Show/src/resource/spot.png","D:/work/Lighting Show/src/resource/two-bg.png"] 
-10:56:30.210 DEBUG 资源目录: D:/work/Lighting Show/dist/static/resource 
-10:56:30.213 DEBUG css中的资源处理完毕! 
-10:56:30.213 DEBUG 使用postcss处理样式，使用了1个插件! 
-10:56:30.273 INFO  文件夹不存在: D:\work\Lighting Show\dist\static\css 
-10:56:30.274 INFO  创建文件夹: D:\work\Lighting Show\dist\static\css 
-10:56:30.274 INFO  开始处理附属css中的资源 
-10:56:30.275 INFO  附属css中的资源处理完毕! 
-10:56:30.275 INFO  读取文件: D:\work\Lighting Show\src\resource\idangerous.swiper2.7.0.css 
-10:56:30.275 INFO  附属css中的资源不需要处理! 
-10:56:30.275 INFO  读取文件: D:\work\Lighting Show\src\resource\idangerous.swiper.3dflow.css 
-10:56:30.275 INFO  附属css中的资源不需要处理! 
-10:56:30.275 INFO  处理字体:{} 
-10:56:30.286 INFO  使用postcss处理完毕! 用时: 73 毫秒 
-10:56:30.286 DEBUG 需要经过特殊处理的css: [["[template=\"3dflow\"] .swiper-container:",".swiper-container[template=\"3dflow\"]:"],["[template=\"3dflow\"] .swiper-container ",".swiper-container[template=\"3dflow\"] "],["[template=\"3dflow\"] .swiper-container{",".swiper-container[template=\"3dflow\"]{"],["[template=\"3dflow\"] div:","div[template=\"3dflow\"]:"],["[template=\"3dflow\"] div ","div[template=\"3dflow\"] "],["[template=\"3dflow\"] div{","div[template=\"3dflow\"]{"],["[template=\"copyright\"] .mt30:",".mt30[template=\"copyright\"]:"],["[template=\"copyright\"] .mt30 ",".mt30[template=\"copyright\"] "],["[template=\"copyright\"] .mt30{",".mt30[template=\"copyright\"]{"],["[template=\"copyright\"] p:","p[template=\"copyright\"]:"],["[template=\"copyright\"] p ","p[template=\"copyright\"] "],["[template=\"copyright\"] p{","p[template=\"copyright\"]{"],["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
-10:56:30.287 INFO  正在处理script! 
-10:56:30.288 INFO  工程中只有一个页面! 
-10:56:30.290 INFO  文件夹不存在: D:\work\Lighting Show\dist\static\js 
-10:56:30.290 INFO  创建文件夹: D:\work\Lighting Show\dist\static\js 
-10:56:32.415 INFO  js中的资源处理完毕! 
-10:56:32.415 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"idangerous.swiper2.7.0.min","src":"./src/resource/idangerous.swiper2.7.0.min.js"},{"name":"idangerous.swiper.3dflow","src":"./src/resource/idangerous.swiper.3dflow.js"},{"name":"main","src":"./src/main.js","resource":true}] 
-10:56:32.415 DEBUG 外部脚本数量: 4 
-10:56:32.415 DEBUG 处理脚本: jquery1.11.0 
-10:56:32.415 DEBUG 网络脚本: jquery1.11.0 
-10:56:32.415 DEBUG 处理脚本: idangerous.swiper2.7.0.min 
-10:56:32.415 INFO  读取文件: D:\work\Lighting Show\src\resource\idangerous.swiper2.7.0.min.js 
-10:56:32.415 DEBUG 处理脚本: idangerous.swiper.3dflow 
-10:56:32.415 INFO  读取文件: D:\work\Lighting Show\src\resource\idangerous.swiper.3dflow.js 
-10:56:32.415 DEBUG 处理脚本: main 
-10:56:32.415 INFO  读取文件: D:\work\Lighting Show\src\main.js 
-10:56:32.415 DEBUG 输出scriptData 
-10:56:32.416 INFO  写文件: D:\work\Lighting Show\dist\static\css\owo.animate.1dxbz7af4l7.css 
-10:56:32.416 DEBUG 准备输出html! 
-10:56:32.416 DEBUG 处理资源: ["D:/work/Lighting Show/src/resource/left.png","D:/work/Lighting Show/src/resource/right.png"] 
-10:56:32.416 DEBUG 资源目录: D:/work/Lighting Show/dist/static/resource 
-10:56:32.417 DEBUG 开始美化html 
-10:56:32.499 INFO  写入文件: D:\work\Lighting Show\dist\static\css\owo.main.1dxbz7af4l7.css 
-10:56:32.499 INFO  主要逻辑文件写出成功! 
-10:56:32.500 INFO  animation文件写出成功! 
-10:56:32.500 INFO  读取成功: D:\work\Lighting Show\src\main.css 
-10:56:32.501 DEBUG 处理资源: ["D:/work/Lighting Show/src/resource/bg.jpg"] 
-10:56:32.501 DEBUG 资源目录: D:/work/Lighting Show/dist/static/resource 
-10:56:32.503 INFO  读取成功: D:\work\Lighting Show\src\resource\idangerous.swiper2.7.0.css 
-10:56:32.504 INFO  读取成功: D:\work\Lighting Show\src\resource\idangerous.swiper.3dflow.css 
-10:56:32.506 INFO  读取成功: D:\work\Lighting Show\src\resource\idangerous.swiper.3dflow.js 
-10:56:32.513 INFO  读取成功: D:\work\Lighting Show\src\main.js 
-10:56:32.685 INFO  写入文件: D:\work\Lighting Show\dist\static\css\main.css 
-10:56:32.685 INFO  写入文件: D:\work\Lighting Show\dist\static\css\idangerous.swiper2.7.0.css 
-10:56:32.685 INFO  写入文件: D:\work\Lighting Show\dist\static\css\idangerous.swiper.3dflow.css 
-10:56:32.685 INFO  写入文件: D:\work\Lighting Show\dist\static\js\idangerous.swiper.3dflow.js 
-10:56:32.685 INFO  写入文件: D:\work\Lighting Show\dist\static\js\main.js 
-10:56:32.688 INFO  读取成功: D:\work\Lighting Show\src\resource\idangerous.swiper2.7.0.min.js 
-10:56:32.698 INFO  写入文件: D:\work\Lighting Show\dist\static\js\idangerous.swiper2.7.0.min.js 
+16:27:23.457 INFO  --------------------------- 开始编译 --------------------------- 
+16:27:23.457 INFO  程序运行目录: D:\work\Lighting Show 
+16:27:23.457 INFO  首次启动! 
+16:27:23.457 INFO  生成版本号: deerx8b2afs 
+16:27:23.472 INFO  清理资源文件夹: D:\work\Lighting Show\dist\static 
+16:27:23.472 INFO  文件夹不存在: D:\work\Lighting Show\dist\static 
+16:27:23.473 INFO  创建文件夹: D:\work\Lighting Show\dist\static 
+16:27:23.473 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+16:27:23.473 DEBUG 读取网页标题: 页面 
+16:27:23.473 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+16:27:23.474 DEBUG 模块 home 因名称重复被重命名为 home0 
+16:27:23.474 INFO  开始处理模块: home 
+16:27:23.511 INFO  开始处理模块: swiperBox 
+16:27:23.512 DEBUG 使用文件缓存:D:\work\Lighting Show\owo_modules\3bee8d4bf2382a60e4fed798a9c7bc90.owo 
+16:27:23.908 DEBUG 缓存模板: swiperBoxundefined 
+16:27:23.911 DEBUG 模板home处理用时: 400 毫秒! 
+16:27:23.911 DEBUG 模块 swiperBox2 因名称重复被重命名为 swiperBox20 
+16:27:23.911 INFO  开始处理模块: swiperBox2 
+16:27:23.929 DEBUG 缓存模板: swiperBox2undefined 
+16:27:23.932 DEBUG 模板home处理用时: 21 毫秒! 
+16:27:23.933 DEBUG 模块 swiperBox3 因名称重复被重命名为 swiperBox30 
+16:27:23.933 INFO  开始处理模块: swiperBox3 
+16:27:23.945 DEBUG 缓存模板: swiperBox3undefined 
+16:27:23.948 DEBUG 模板home处理用时: 15 毫秒! 
+16:27:23.948 DEBUG 模块 swiperBox4 因名称重复被重命名为 swiperBox40 
+16:27:23.948 INFO  开始处理模块: swiperBox4 
+16:27:23.959 DEBUG 缓存模板: swiperBox4undefined 
+16:27:23.960 DEBUG 模板home处理用时: 12 毫秒! 
+16:27:23.961 DEBUG 模块 copyright 因名称重复被重命名为 copyright0 
+16:27:23.961 INFO  开始处理模块: copyright 
+16:27:23.964 DEBUG 缓存模板: copyrightundefined 
+16:27:23.965 DEBUG 模板home处理用时: 4 毫秒! 
+16:27:23.977 DEBUG 缓存模板: home./src/page/home.page 
+16:27:23.977 DEBUG 模板home处理用时: 504 毫秒! 
+16:27:23.978 INFO  文件夹不存在: D:/work/Lighting Show/dist/static/resource 
+16:27:23.979 INFO  创建文件夹: D:/work/Lighting Show/dist/static/resource 
+16:27:23.980 DEBUG 处理资源: ["D:/work/Lighting Show/src/resource/map.png","D:/work/Lighting Show/src/resource/stars.png","D:/work/Lighting Show/src/resource/info.png","D:/work/Lighting Show/src/resource/domestic-link.png","D:/work/Lighting Show/src/resource/abroad-link.png","D:/work/Lighting Show/src/resource/decorate.jpg","D:/work/Lighting Show/src/resource/content1.png","D:/work/Lighting Show/src/resource/content2.png"] 
+16:27:23.980 DEBUG 资源目录: D:/work/Lighting Show/dist/static/resource 
+16:27:23.982 DEBUG css中的资源处理完毕! 
+16:27:23.982 DEBUG 使用postcss处理样式，使用了1个插件! 
+16:27:24.034 INFO  文件夹不存在: D:\work\Lighting Show\dist\static\css 
+16:27:24.034 INFO  创建文件夹: D:\work\Lighting Show\dist\static\css 
+16:27:24.034 INFO  开始处理附属css中的资源 
+16:27:24.035 INFO  附属css中的资源处理完毕! 
+16:27:24.035 INFO  读取文件: D:\work\Lighting Show\src\resource\idangerous.swiper2.7.0.css 
+16:27:24.035 INFO  附属css中的资源不需要处理! 
+16:27:24.035 INFO  读取文件: D:\work\Lighting Show\src\resource\idangerous.swiper.3dflow.css 
+16:27:24.035 INFO  附属css中的资源不需要处理! 
+16:27:24.035 INFO  处理字体:{} 
+16:27:24.044 INFO  使用postcss处理完毕! 用时: 62 毫秒 
+16:27:24.044 DEBUG 需要经过特殊处理的css: [["[template=\"swiperBox\"] .swiper-box:",".swiper-box[template=\"swiperBox\"]:"],["[template=\"swiperBox\"] .swiper-box ",".swiper-box[template=\"swiperBox\"] "],["[template=\"swiperBox\"] .swiper-box{",".swiper-box[template=\"swiperBox\"]{"],["[template=\"swiperBox\"] .show:",".show[template=\"swiperBox\"]:"],["[template=\"swiperBox\"] .show ",".show[template=\"swiperBox\"] "],["[template=\"swiperBox\"] .show{",".show[template=\"swiperBox\"]{"],["[template=\"swiperBox\"] div:","div[template=\"swiperBox\"]:"],["[template=\"swiperBox\"] div ","div[template=\"swiperBox\"] "],["[template=\"swiperBox\"] div{","div[template=\"swiperBox\"]{"],["[template=\"swiperBox2\"] .swiper-box:",".swiper-box[template=\"swiperBox2\"]:"],["[template=\"swiperBox2\"] .swiper-box ",".swiper-box[template=\"swiperBox2\"] "],["[template=\"swiperBox2\"] .swiper-box{",".swiper-box[template=\"swiperBox2\"]{"],["[template=\"swiperBox2\"] .show:",".show[template=\"swiperBox2\"]:"],["[template=\"swiperBox2\"] .show ",".show[template=\"swiperBox2\"] "],["[template=\"swiperBox2\"] .show{",".show[template=\"swiperBox2\"]{"],["[template=\"swiperBox2\"] div:","div[template=\"swiperBox2\"]:"],["[template=\"swiperBox2\"] div ","div[template=\"swiperBox2\"] "],["[template=\"swiperBox2\"] div{","div[template=\"swiperBox2\"]{"],["[template=\"swiperBox3\"] .swiper-box:",".swiper-box[template=\"swiperBox3\"]:"],["[template=\"swiperBox3\"] .swiper-box ",".swiper-box[template=\"swiperBox3\"] "],["[template=\"swiperBox3\"] .swiper-box{",".swiper-box[template=\"swiperBox3\"]{"],["[template=\"swiperBox3\"] .show:",".show[template=\"swiperBox3\"]:"],["[template=\"swiperBox3\"] .show ",".show[template=\"swiperBox3\"] "],["[template=\"swiperBox3\"] .show{",".show[template=\"swiperBox3\"]{"],["[template=\"swiperBox3\"] div:","div[template=\"swiperBox3\"]:"],["[template=\"swiperBox3\"] div ","div[template=\"swiperBox3\"] "],["[template=\"swiperBox3\"] div{","div[template=\"swiperBox3\"]{"],["[template=\"swiperBox4\"] .swiper-box:",".swiper-box[template=\"swiperBox4\"]:"],["[template=\"swiperBox4\"] .swiper-box ",".swiper-box[template=\"swiperBox4\"] "],["[template=\"swiperBox4\"] .swiper-box{",".swiper-box[template=\"swiperBox4\"]{"],["[template=\"swiperBox4\"] .show:",".show[template=\"swiperBox4\"]:"],["[template=\"swiperBox4\"] .show ",".show[template=\"swiperBox4\"] "],["[template=\"swiperBox4\"] .show{",".show[template=\"swiperBox4\"]{"],["[template=\"swiperBox4\"] div:","div[template=\"swiperBox4\"]:"],["[template=\"swiperBox4\"] div ","div[template=\"swiperBox4\"] "],["[template=\"swiperBox4\"] div{","div[template=\"swiperBox4\"]{"],["[template=\"copyright\"] .mt30:",".mt30[template=\"copyright\"]:"],["[template=\"copyright\"] .mt30 ",".mt30[template=\"copyright\"] "],["[template=\"copyright\"] .mt30{",".mt30[template=\"copyright\"]{"],["[template=\"copyright\"] p:","p[template=\"copyright\"]:"],["[template=\"copyright\"] p ","p[template=\"copyright\"] "],["[template=\"copyright\"] p{","p[template=\"copyright\"]{"],["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+16:27:24.045 INFO  正在处理script! 
+16:27:24.046 INFO  工程中只有一个页面! 
+16:27:24.047 INFO  文件夹不存在: D:\work\Lighting Show\dist\static\js 
+16:27:24.047 INFO  创建文件夹: D:\work\Lighting Show\dist\static\js 
+16:27:24.761 INFO  js中的资源处理完毕! 
+16:27:24.761 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"idangerous.swiper2.7.0.min","src":"./src/resource/idangerous.swiper2.7.0.min.js"},{"name":"idangerous.swiper.3dflow","src":"./src/resource/idangerous.swiper.3dflow.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+16:27:24.761 DEBUG 外部脚本数量: 4 
+16:27:24.761 DEBUG 处理脚本: jquery1.11.0 
+16:27:24.761 DEBUG 网络脚本: jquery1.11.0 
+16:27:24.761 DEBUG 处理脚本: idangerous.swiper2.7.0.min 
+16:27:24.761 INFO  读取文件: D:\work\Lighting Show\src\resource\idangerous.swiper2.7.0.min.js 
+16:27:24.761 DEBUG 处理脚本: idangerous.swiper.3dflow 
+16:27:24.761 INFO  读取文件: D:\work\Lighting Show\src\resource\idangerous.swiper.3dflow.js 
+16:27:24.761 DEBUG 处理脚本: main 
+16:27:24.761 INFO  读取文件: D:\work\Lighting Show\src\main.js 
+16:27:24.761 DEBUG 输出scriptData 
+16:27:24.772 INFO  写文件: D:\work\Lighting Show\dist\static\css\owo.animate.deerx8b2afs.css 
+16:27:24.772 DEBUG 准备输出html! 
+16:27:24.772 DEBUG 忽略文件: D:/work/Lighting Show/src/resource/show.jpg 
+16:27:24.772 DEBUG 忽略文件: D:/work/Lighting Show/src/resource/show.jpg 
+16:27:24.772 DEBUG 忽略文件: D:/work/Lighting Show/src/resource/show.jpg 
+16:27:24.772 DEBUG 处理资源: ["D:/work/Lighting Show/src/resource/show.jpg"] 
+16:27:24.772 DEBUG 资源目录: D:/work/Lighting Show/dist/static/resource 
+16:27:24.772 DEBUG 开始美化html 
+16:27:24.835 INFO  写入文件: D:\work\Lighting Show\dist\static\css\owo.main.deerx8b2afs.css 
+16:27:24.836 INFO  animation文件写出成功! 
+16:27:24.836 INFO  主要逻辑文件写出成功! 
+16:27:24.837 INFO  读取成功: D:\work\Lighting Show\src\main.css 
+16:27:24.837 DEBUG 处理资源: ["D:/work/Lighting Show/src/resource/bg.jpg"] 
+16:27:24.837 DEBUG 资源目录: D:/work/Lighting Show/dist/static/resource 
+16:27:24.837 INFO  读取成功: D:\work\Lighting Show\src\resource\idangerous.swiper2.7.0.css 
+16:27:24.837 INFO  读取成功: D:\work\Lighting Show\src\resource\idangerous.swiper.3dflow.css 
+16:27:24.837 INFO  读取成功: D:\work\Lighting Show\src\resource\idangerous.swiper.3dflow.js 
+16:27:24.837 INFO  读取成功: D:\work\Lighting Show\src\main.js 
+16:27:25.002 INFO  写入文件: D:\work\Lighting Show\dist\static\css\main.css 
+16:27:25.002 INFO  写入文件: D:\work\Lighting Show\dist\static\js\idangerous.swiper.3dflow.js 
+16:27:25.010 INFO  写入文件: D:\work\Lighting Show\dist\static\js\main.js 
+16:27:25.010 INFO  写入文件: D:\work\Lighting Show\dist\static\css\idangerous.swiper.3dflow.css 
+16:27:25.015 INFO  写入文件: D:\work\Lighting Show\dist\static\css\idangerous.swiper2.7.0.css 
+16:27:25.015 INFO  读取成功: D:\work\Lighting Show\src\resource\idangerous.swiper2.7.0.min.js 
+16:27:25.030 INFO  写入文件: D:\work\Lighting Show\dist\static\js\idangerous.swiper2.7.0.min.js 

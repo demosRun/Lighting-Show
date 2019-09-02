@@ -118,7 +118,7 @@ module.exports = {
   pageList: [
     {
       name: 'home',
-      src: './src/page/home2.page'
+      src: './src/page/home.page'
     }
   ],
   // 调试模式配置
