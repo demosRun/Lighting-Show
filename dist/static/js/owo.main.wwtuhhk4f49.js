@@ -1,4 +1,35 @@
-// Fri Aug 30 2019 15:20:27 GMT+0800 (GMT+08:00)
+// Mon Sep 02 2019 09:05:46 GMT+0800 (GMT+08:00)
+
+"use strict";
+
+// 存储页面基本信息
+var owo = {
+  // 页面默认入口 如果没有设置 则取第一个页面为默认页面
+  entry: "home",
+  // 全局方法变量
+  tool: {},
+  // 框架状态变量
+  state: {}
+};
+/*
+  存储每个页面的函数
+  键名：页面名称
+  键值：方法列表
+*/
+
+owo.script = {
+  "home": {
+    "created": function created() {},
+    "starsClick": function starsClick() {
+      console.log(this);
+    },
+    "template": {
+      "copyright": {
+        "prop": {}
+      }
+    }
+  }
+};
 
 /* 方法合集 */
 var _owo = {
@@ -244,23 +275,4 @@ _owo.handlePage = function (newPageFunction, entryDom) {
     // 递归处理
     _owo.handlePage(templateScript, childDom)
   }
-}
-_owo._event_tap = function (tempDom, callBack) {
-  // 变量
-  var startTime = 0
-  var isMove = false
-  tempDom.addEventListener('touchstart', function() {
-    startTime = Date.now();
-  })
-  tempDom.addEventListener('touchmove', function() {
-    isMove = true
-  })
-  tempDom.addEventListener('touchend', function(e) {
-    if (Date.now() - startTime < 300 && !isMove) {
-      callBack(e)
-    }
-    // 清零
-    startTime = 0;
-    isMove = false
-  })
 }

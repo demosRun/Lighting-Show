@@ -2,7 +2,7 @@ module.exports = {
   // 项目根目录
   root: "/src",
   // 项目入口文件
-  entry: "home2",
+  entry: "home",
   // 页面标题
   title: '页面',
   // 解决方案
@@ -117,8 +117,8 @@ module.exports = {
   // 页面清单
   pageList: [
     {
-      name: 'home2',
-      src: './src/page/home2.page'
+      name: 'home',
+      src: './src/page/home.page'
     }
   ],
   // 调试模式配置

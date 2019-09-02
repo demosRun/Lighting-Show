@@ -4,18 +4,18 @@
     <!-- 地图 -->
     <div class="map-box">
       <!-- 星星 -->
-      <a href="#" class="stars stars1" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars2" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars3" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars4" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars5" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars1" :click="starsClick"><div class="info">纽约</div></a>
+      <a href="#" class="stars stars2" :click="starsClick"><div class="info">巴黎</div></a>
+      <a href="#" class="stars stars3" :click="starsClick"><div class="info">布鲁塞尔</div></a>
+      <a href="#" class="stars stars4" :click="starsClick"><div class="info">罗马</div></a>
+      <a href="#" class="stars stars5" :click="starsClick"><div class="info">挪威奥斯陆</div></a>
       <a href="#" class="stars stars6" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars7" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars8" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars9" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars10" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars11" :click="starsClick"><div class="info">北京</div></a>
-      <a href="#" class="stars stars12" :click="starsClick"><div class="info">北京</div></a>
+      <a href="#" class="stars stars7" :click="starsClick"><div class="info">青岛</div></a>
+      <a href="#" class="stars stars8" :click="starsClick"><div class="info">延安</div></a>
+      <a href="#" class="stars stars9" :click="starsClick"><div class="info">芜湖</div></a>
+      <a href="#" class="stars stars10" :click="starsClick"><div class="info">上海</div></a>
+      <a href="#" class="stars stars11" :click="starsClick"><div class="info">广州</div></a>
+      <a href="#" class="stars stars12" :click="starsClick"><div class="info">深圳</div></a>
     </div>
     <!-- 二级页链接 -->
     <a href="#" class="link abroad-link"></a>
@@ -171,7 +171,7 @@
 .content-box {
   padding-bottom: 40px;
   background-color: #596186;
-  background-image: url(@|decorate.png|);
+  background-image: url(@|decorate.jpg|);
   ul {
     display: block;
     width: 1136px;
